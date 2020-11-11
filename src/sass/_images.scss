@@ -1,0 +1,23 @@
+img {
+	max-height: 250px;
+}
+
+.gallery {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	width: 100vw;
+	justify-content: center;
+	padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+	.gallery {
+		flex-direction: column;
+	}
+	img {
+		max-width: 60vw;
+		min-width: 200px;
+		align-self: center;
+	}
+}
